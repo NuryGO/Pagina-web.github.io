@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Inicio Fondo*/
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container::before {
+  content:'';
+  background: #000000;
+  background-color: #000000;
+  background-image: url(/img/colombia.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.35;
+}
+
+.nav-main{
+    position: absolute;
+}
+/* Final Fondo*/
+
+/* Inicio titulo*/
+h1{
+    -webkit-text-stroke-width: 1px; /* Grosor del borde */
+    -webkit-text-stroke-color: black; /* Color del borde */
+    font-size: 60px;
+    text-align: center;
+    font-family: sans-serif;
+    color: black;
+}
+/* Final titulo*/
+
+/* Inicio menu*/
+.menu{
+    background-size: 100% 100%;
+    display: block;
+    background-repeat: no-repeat;
+    float: left;
+    text-align: center;
+    margin-top: 350px;
+    margin-left: 20px;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+}   
+
+nav ul li a{
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    width: 100px; /* Ancho del menú */
+    background-color: none; /* Color de fondo */
+}
+  
+nav li {
+    border-bottom: 1px solid #ddd; /* Línea separadora */
+    border-radius: 5px;
+}
+  
+nav li:last-child {
+    border-bottom: none; /* Sin borde en el último elemento */
+}
+
+nav a {
+    display: block; /* Para que ocupe todo el ancho y sea clicable */
+    padding: 10px 15px; /* Espaciado interno */
+    text-decoration: none; /* Elimina el subrayado */
+    color: #333; /* Color del texto */
+    text-align: none;
+}
+
+nav a:hover {
+    background-color: #ffe6008a; /* Color de fondo al pasar el mouse */
+    color: #000; /* Color del texto al pasar el mouse */
+  }
+/* final menu*/
+
+/* Inicio texto*/
+.Introduccion {
+    position: absolute;
+    width: 700px;
+    font-size: 35px;
+    display: block;
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+/* Final texto*/
+
+/* Inicio Muñeco*/
+.img1{
+    width: 32%;
+    height: auto;
+    display: block;
+    position: absolute;
+    align-items: center;
+    margin-left: 800px;
+    margin-top: -25px;
+}
+/* Final Muñeco*/
+
+@media (max-width:790px){
+    .container {
+        display: none;
+    }
+}

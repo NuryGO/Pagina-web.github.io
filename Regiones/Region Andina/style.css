@@ -1,0 +1,328 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Inicio Fondo*/
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container::before {
+  content:'';
+  background: #000000;
+  background-color: #000000;
+  background-image: url(/img/Bandera.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.35;
+}
+
+.nav-main{
+    position: absolute;
+}
+/* Final Fondo*/
+
+/* Inicio titulo*/
+h1{
+    -webkit-text-stroke-width: 1px; /* Grosor del borde */
+    -webkit-text-stroke-color: black; /* Color del borde */
+    font-size: 60px;
+    text-align: center;
+    font-family: sans-serif;
+    color: black;
+    margin-top: 20px;
+}
+/* Final titulo*/
+
+/* Inicio menu*/
+.menu{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    float: left;
+    display: block;
+    text-align: center;
+    margin-top: 500px;
+    margin-left: -420px;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+}   
+
+nav ul li a{
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    width: 100px; /* Ancho del menú */
+    background-color: none; /* Color de fondo */
+}
+  
+nav li {
+    border-bottom: 1px solid #ddd; /* Línea separadora */
+    border-radius: 5px;
+}
+  
+nav li:last-child {
+    border-bottom: none; /* Sin borde en el último elemento */
+}
+
+nav a {
+    display: block; /* Para que ocupe todo el ancho y sea clicable */
+    padding: 10px 15px; /* Espaciado interno */
+    text-decoration: none; /* Elimina el subrayado */
+    color: #333; /* Color del texto */
+    text-align: none;
+}
+
+nav a:hover {
+    background-color: #ddd; /* Color de fondo al pasar el mouse */
+    color: #000; /* Color del texto al pasar el mouse */
+  }
+/* final menu*/
+
+/* Inicio texto*/
+.texto{
+    position: absolute;
+    width: 700px;
+    font-size: 35px;
+    display: block;
+    margin-left: -400px;
+    margin-top: 130px;
+  }
+/* Final texto*/
+
+/* Inicio Muñeco*/
+.img1{
+    width: 80%;
+    height: auto;
+    display: block;
+    position: absolute;
+    align-items: center;
+    margin-left: 330px;
+    margin-top: 20px;
+}
+/* Final Muñeco*/
+
+/* Inicio Botones*/
+ #texto {
+      display: none;
+      position: absolute;
+      top: 140px;
+      left: 80%;
+      transform: translateX(-50%);
+      background: transparent;
+      color: black;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+
+.movible {
+      position: absolute;
+      cursor: grab;
+      transform: translateX(-50%);
+      background: transparent;
+      color: black;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 18px;
+      z-index: 10;
+      border: 0;
+      margin-top: -520px;
+      margin-left: 1090px;
+      font-weight: bold;
+}
+
+#texto1 {
+      display: none;
+      position: absolute;
+      top: 240px;
+      left: 77%;
+      transform: translateX(-50%);
+      background: transparent;
+      color: black;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+
+.movible1 {
+      position: absolute;
+      cursor: grab;
+      transform: translateX(-50%);
+      background: transparent;
+      color: black;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 18px;
+      z-index: 10;
+      border: 0;
+      margin-top: -420px;
+      margin-left: 1060px;
+      font-weight: bold;
+}
+
+#texto2 {
+      display: none;
+      position: absolute;
+      top: 245px;
+      left: 66%;
+      transform: translateX(-50%);
+      background: transparent;
+      color: black;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+
+.movible2 {
+      position: absolute;
+      cursor: grab;
+      transform: translateX(-50%);
+      background: transparent;
+      color: black;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 18px;
+      z-index: 10;
+      border: 0;
+      margin-top: -410px;
+      margin-left: 900px;
+      font-weight: bold;
+}
+
+#texto3 {
+      display: none;
+      position: absolute;
+      top: 315px;
+      left: 81%;
+      transform: translateX(-50%);
+      background: transparent;
+      color: black;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+
+.movible3 {
+      position: absolute;
+      cursor: grab;
+      transform: translateX(-50%);
+      background: transparent;
+      color: black;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 18px;
+      z-index: 10;
+      border: 0;
+      margin-top: -340px;
+      margin-left: 1080px;
+      font-weight: bold;
+}
+
+#texto4 {
+      display: none;
+      position: absolute;
+      top: 350px;
+      left: 74.5%;
+      transform: translateX(-50%);
+      background: transparent;
+      color: black;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+
+.movible4 {
+      position: absolute;
+      cursor: grab;
+      transform: translateX(-50%);
+      background: transparent;
+      color: black;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 18px;
+      z-index: 10;
+      border: 0;
+      margin-top: -300px;
+      margin-left: 1010px;
+      font-weight: bold;
+}
+
+#texto5 {
+      display: none;
+      position: absolute;
+      top: 400px;
+      left: 70%;
+      transform: translateX(-50%);
+      background: transparent;
+      color: black;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+
+.movible5 {
+      position: absolute;
+      cursor: grab;
+      transform: translateX(-50%);
+      background: transparent;
+      color: black;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 18px;
+      z-index: 10;
+      border: 0;
+      margin-top: -250px;
+      margin-left: 940px;
+      font-weight: bold;
+}
+
+#texto6 {
+      display: none;
+      position: absolute;
+      top: 500px;
+      left: 69%;
+      transform: translateX(-50%);
+      background: transparent;
+      color: black;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+
+.movible6 {
+      position: absolute;
+      cursor: grab;
+      transform: translateX(-50%);
+      background: transparent;
+      color: black;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 18px;
+      z-index: 10;
+      border: 0;
+      margin-top: -150px;
+      margin-left: 930px;
+      font-weight: bold;
+}
+/* Inicio Botones*/
+
+@media (max-width:790px){
+    .container {
+        display: none;
+    }
+}
